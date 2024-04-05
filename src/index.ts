@@ -35,4 +35,4 @@ const profile = new NpProfile(key, "", "", "");
 const nanopub = new Nanopub(rdf);
 const signed = nanopub.sign(profile);
 
-console.log({ profile, nanopub: nanopub.info(), signed: signed.info() });
+console.log({ profile, nanopub, signed });
