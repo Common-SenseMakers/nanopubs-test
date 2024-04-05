@@ -36,3 +36,5 @@ const nanopub = new Nanopub(rdf);
 const signed = nanopub.sign(profile);
 
 console.log({ profile, nanopub, signed });
+
+console.log({ profile, nanopub: nanopub.info(), signed: signed.info() });
